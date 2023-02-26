@@ -5,6 +5,7 @@ import path from 'node:path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/apple-constructor/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
