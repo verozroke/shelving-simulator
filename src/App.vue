@@ -1,6 +1,6 @@
 <script setup>
 </script>
-
+<!-- bruh -->
 <template>
     <div class="wrapper">
         <RouterView/>
