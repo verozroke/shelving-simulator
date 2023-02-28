@@ -13,19 +13,19 @@ const useLogosStore = defineStore('logosStore', {
             ],
             femCareLogos: [
                 './logos/femCare_1.png',
-                './logos/femCare_2.jpg',
-                './logos/femCare_3.jpg',
+                './logos/femCare_2.png',
+                './logos/femCare_3.png',
             ],
             hairCareLogos: [
                 './logos/hairCare_1.png',
-                './logos/hairCare_2.jpg',
+                './logos/hairCare_2.png',
                 './logos/hairCare_3.png',
                 './logos/hairCare_4.png',
             ],
             laundryCareLogos: [
                 './logos/laundryCare_1.png',
                 './logos/laundryCare_2.png',
-                './logos/laundryCare_3.jpg',
+                './logos/laundryCare_3.png',
             ],
         }
     })

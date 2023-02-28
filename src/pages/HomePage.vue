@@ -9,8 +9,8 @@
             <div class="home__categories">
                     <UICategoryBlock category="babyCare" title="Baby care. Детская гигиена" :logos="logosStore.logos.babyCareLogos"/>
                     <UICategoryBlock category="dishCare" title="Home care. Средства для мытья посуды и по уходу за домом" :logos="logosStore.logos.dishCareLogos"/>
-                    <UICategoryBlock category="femCare" title="Feminine care. Женская гигиена" :logos="logosStore.logos.femCareLogos"/>
-                    <UICategoryBlock category="hairCare" title="Hair car. Средства по уходу за волосами" :logos="logosStore.logos.hairCareLogos"/>
+                    <UICategoryBlock category="femCare" title="Feminine hygiene. Женская гигиена" :logos="logosStore.logos.femCareLogos"/>
+                    <UICategoryBlock category="hairCare" title="Hair care. Средства по уходу за волосами" :logos="logosStore.logos.hairCareLogos"/>
                     <UICategoryBlock category="laundryCare" title="Laundry. Средства для стирки" :logos="logosStore.logos.laundryCareLogos"/>
             </div>
             </div>
