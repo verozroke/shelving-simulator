@@ -4,7 +4,7 @@
             <div class="category__box">
                 <RouterLink :to="{name: 'Home'}"><div class="category__logo"><img src="@img/assets/logo.png" alt=""></div></RouterLink>
                 <div class="category__title">КАТЕГОРИЯ</div>
-                <div class="category__subtitle">{{ store.ST.title }}</div>
+                <div class="category__subtitle">{{ store.OMA.title }}</div>
                 <div class="category__block">
                     <div class="category__shop"><img src="@img/assets/shop.png" alt=""></div>
                     <div class="category__choice">
@@ -12,18 +12,31 @@
                         <div class="category__arrow"><img src="@img/icons/arrow.png" alt=""></div>
                     </div>
                 </div>
-                <div class="category__list">
+                <div class="category__list" :class="{'wide': $route.params.category === 'femCare'}">
                     <template v-if="$route.params.category === 'laundryCare'">
                         <UILevelBlock marketType="st" :level-number="1" text="Small traditional store/Малый магазин шаговой доступности" />
                         <UILevelBlock marketType="lt" :level-number="2" text="Large traditional store/Большой магазин шаговой доступности" />
                         <UILevelBlock marketType="oma" :level-number="3" text="Open market/Открытый рынок" />
                         <UILevelBlock marketType="x2" :level-number="4" text="Small home improvement/Хозяйственный магазин" />
                     </template>
-                    <template v-else>
+                    <template v-else-if="$route.params.category === 'dishCare'"> 
                         <UILevelBlock marketType="st" :level-number="1" text="Small traditional store/Малый магазин шаговой доступности" />
                         <UILevelBlock marketType="mt" :level-number="2" text="Medium traditional store/Средний магазин шаговой доступности" />
                         <UILevelBlock marketType="oma" :level-number="3" text="Open market/Открытый рынок" />
                         <UILevelBlock marketType="x2" :level-number="4" text="Small home improvement/Хозяйственный магазин" />
+                    </template>
+                    <template v-else-if="$route.params.category === 'babyCare'">
+                        <UILevelBlock marketType="d2" :level-number="1" text="Pharmacy Small/Малая аптека " />
+                        <UILevelBlock marketType="lt" :level-number="2" text="Large traditional store/Большой магазин шаговой доступности" />
+                        <UILevelBlock marketType="oma" :level-number="3" text="Open market/Открытый рынок" />
+                        <UILevelBlock marketType="b2" :level-number="4" text="Baby Store Small/Детский малый магазин " />
+                    </template>
+                    <template v-else-if="$route.params.category === 'femCare'">
+                        <UILevelBlock marketType="st" :level-number="1" text="Small traditional store/Малый магазин шаговой доступности" />
+                        <UILevelBlock marketType="lt" :level-number="2" text="Large traditional store/Большой магазин шаговой доступности" />
+                        <UILevelBlock marketType="d2" :level-number="3" text="Pharmacy Small/Малая аптека " />
+                        <UILevelBlock marketType="x2" :level-number="4" text="Small home improvement/Хозяйственный магазин" />
+                        <UILevelBlock marketType="oma" :level-number="5" text="Open market/Открытый рынок" />
                     </template>
                 </div>
             </div>
@@ -156,6 +169,9 @@ switch (route.params.category) {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        &.wide {
+            height: 500px;
+        }
     }
 }
 
