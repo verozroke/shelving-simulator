@@ -1,34 +1,40 @@
 <template>
     <div class="tsukue">
-            <UIDescriptionBlock :status="data.status" :conditions="data.conditions" :description="data.description"/>
-            <div class="tsukue__desk">
-                <div class="tsukue__desk-box">
-                    <ul class="tsukue__shelfs">
-                        <li class="tsukue__shelf" v-for="_id in 5" :key="_id">
-                            <ul :class="`tsukue__2-term-shelf-${_id}`">
-                                <li class="tsukue__cell" v-for="n in 15"></li>
-                            </ul>
+        <UIDescriptionBlock :status="data.status" :conditions="data.conditions" :description="data.description"/>
+        <div class="flexing-sexing">
+            <div>
+                <div class="tsukue__desk">
+                    <div class="tsukue__desk-box">
+                        <ul class="tsukue__shelfs">
+                            <li class="tsukue__shelf" v-for="_id in 5" :key="_id">
+                                <ul :class="`tsukue__2-term-shelf-${_id}`">
+                                    <li class="tsukue__cell" v-for="n in 15"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tsukue__limit hidden">Превышен лимит товаров на полке! Первый товар на полке был перемещен обратно.</div>
+            </div>
+            <div class="bruh">
+                <div class="tsukue__box">
+                    <ul class="tsukue__items">
+                        <li 
+                            class="tsukue__item"
+                            :class="{wide: item.isWide}" 
+                            v-for="item in imgs" 
+                            :key="item.id"
+                            :id="item.id"
+                            @dblclick="copy(item.id)"
+                        >
+                            <img :src="item.src" :alt="item.id">
                         </li>
                     </ul>
                 </div>
+                <div id="clearButton" @click="clearList()" class="tsukue__button">Очистить</div>
+                <router-link :to="{name: 'Category'}" class="tsukue__button"> {{ '<<< Назад к выбору' }} </router-link>
             </div>
-            <div class="tsukue__limit hidden">Превышен лимит товаров на полке! Первый товар на полке был перемещен обратно.</div>
-            <div class="tsukue__box">
-                <ul class="tsukue__items">
-                    <li 
-                        class="tsukue__item"
-                        :class="{wide: item.isWide}" 
-                        v-for="item in imgs" 
-                        :key="item.id"
-                        :id="item.id"
-                        @dblclick="copy(item.id)"
-                    >
-                        <img :src="item.src" :alt="item.id">
-                    </li>
-                </ul>
-            </div>
-            <div id="clearButton" @click="clearList()" class="tsukue__button">Очистить</div>
-            <router-link :to="{name: 'Category'}" class="tsukue__button"> {{ '<<< Назад к выбору' }} </router-link>
+        </div>
     </div> 
 </template>
 
@@ -105,8 +111,8 @@ onMounted(() => {   // works when component is load (mounted)
     display: flex;
     flex-direction: column;
     justify-content: center;                 
-    align-items: flex-end;
-    width: 600px;
+    align-items: center;
+    // width: 600px;
     gap: 2em;    
     font-family: 'Arimo', sans-serif;
     &__desk {
@@ -159,7 +165,7 @@ onMounted(() => {   // works when component is load (mounted)
         color: #014743;
         font-weight: 700;
         padding: 1em 2em;
-        margin: 0 0 1em 0;
+        margin: 0em 0 1em 0;
         border-radius: .3em;
         border: 3px solid #014743;
         transition: .4s;
@@ -276,6 +282,19 @@ onMounted(() => {   // works when component is load (mounted)
 #messageSend {
     display: none;
 }
+
+.bruh {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // justify-content: space-between;
+    gap: 2em;
+}
+
+.flexing-sexing {
+    display: flex;
+}
+
 
 
 </style>

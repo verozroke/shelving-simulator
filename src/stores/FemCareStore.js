@@ -118,11 +118,7 @@ export const useFemCareStore = defineStore('femCareStore', {
             {id: 76, src: './categories/femCare/76.png', isWide: true},
             {id: 77, src: './categories/femCare/77.png', isWide: true},
             {id: 78, src: './categories/femCare/78.png', isWide: true},
-            {id: 79, src: './categories/femCare/79.png', isWide: true},
-            {id: 80, src: './categories/femCare/80.png', isWide: true},
-            {id: 81, src: './categories/femCare/81.png', isWide: true},
-            {id: 82, src: './categories/femCare/82.png', isWide: true},
-            
+            {id: 79, src: './categories/femCare/79.png', isWide: true},            
         ]
     })
 })  
