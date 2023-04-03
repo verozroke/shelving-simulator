@@ -13,7 +13,7 @@
                     </div>
                 </div>
                 <div class="category__list" :class="{'wide': $route.params.category === 'femCare'}">
-                    <template v-if="$route.params.category === 'laundryCare'">
+                    <template v-if="$route.params.category === 'laundryCare' || $route.params.category === 'hairCare'">
                         <UILevelBlock marketType="st" :level-number="1" text="Small traditional store/Малый магазин шаговой доступности" />
                         <UILevelBlock marketType="lt" :level-number="2" text="Large traditional store/Большой магазин шаговой доступности" />
                         <UILevelBlock marketType="oma" :level-number="3" text="Open market/Открытый рынок" />
