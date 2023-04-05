@@ -65,6 +65,9 @@ switch (route.params.marketType) {
     case 'b2':
         data = store.B2
         break
+    case 'sm':
+        data = store.SM
+        break
 }
 
 

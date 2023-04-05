@@ -155,7 +155,6 @@ export const useLaundryCareStore = defineStore('laundryCareStore', {
             {id: 122, src: './categories/laundryCare/122.png', isWide: true},
             {id: 123, src: './categories/laundryCare/123.png', isWide: true},
             {id: 124, src: './categories/laundryCare/124.png', isWide: true},
-            
         ]
     })
 })  

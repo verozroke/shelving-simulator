@@ -29,7 +29,7 @@
                         <UILevelBlock marketType="d2" :level-number="1" text="Pharmacy Small/Малая аптека " />
                         <UILevelBlock marketType="lt" :level-number="2" text="Large traditional store/Большой магазин шаговой доступности" />
                         <UILevelBlock marketType="oma" :level-number="3" text="Open market/Открытый рынок" />
-                        <UILevelBlock marketType="b2" :level-number="4" text="Baby Store Small/Детский малый магазин " />
+                        <UILevelBlock marketType="sm" :level-number="4" text="Small Minimarket/Малый минимаркет" />
                     </template>
                     <template v-else-if="$route.params.category === 'femCare'">
                         <UILevelBlock marketType="st" :level-number="1" text="Small traditional store/Малый магазин шаговой доступности" />

@@ -19,7 +19,7 @@ export const useDishCareStore = defineStore('dishCareStore', {
         OMA: {
             title: 'Home care. Средства для мытья посуды и по уходу за домом',
             status: 'Золотой Продавец',
-            conditions: `omaomaomaomaСобери полку из PSKU, соблюдая стратегию категорий, логику выкладки товаров на полке по SBD стандартам`,
+            conditions: `Собери полку из PSKU, соблюдая стратегию категорий, логику выкладки товаров на полке по SBD стандартам`,
             description: `У тебя в наличии весь ассортимент товаров нашего портфеля из категорий Средства для мытья посуды (Fairy, Миф) и ассортимент из PSKU листа из категорий Средства для ухода за домом (Proper). Необходимо из нее отсортировать PSKU лист для данного типа торговой точки.  
             Все SKU представлены в одном фейсе, вы можете увеличивать фейсы двойным кликом мыши (наведи на SKU и 2 раза кликни левой кнопкой мыши).`,
         },
@@ -93,9 +93,6 @@ export const useDishCareStore = defineStore('dishCareStore', {
             {id: 60, src: './categories/dishCare/60.png', isWide: false},
             {id: 61, src: './categories/dishCare/61.png', isWide: false},
             {id: 62, src: './categories/dishCare/62.png', isWide: false},
-            {id: 63, src: './categories/dishCare/63.png', isWide: false},
-            {id: 64, src: './categories/dishCare/64.png', isWide: false},
-            {id: 65, src: './categories/dishCare/65.png', isWide: false},
         ]
     })
 })  
