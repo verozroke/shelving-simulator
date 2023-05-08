@@ -109,6 +109,11 @@ export const useBabyCareStore = defineStore('babyCareStore', {
             {id: 73, src: './categories/babyCare/73.png', isWide: true},
             {id: 74, src: './categories/babyCare/74.png', isWide: true},
             {id: 75, src: './categories/babyCare/75.png', isWide: true},
+            {id: 76, src: './categories/babyCare/76.png', isWide: true},
+            {id: 77, src: './categories/babyCare/77.png', isWide: true},
+            {id: 78, src: './categories/babyCare/78.png', isWide: true},
+            {id: 79, src: './categories/babyCare/79.png', isWide: true},
+
         ]
     })
 })  

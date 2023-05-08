@@ -101,6 +101,14 @@ export const useDishCareStore = defineStore('dishCareStore', {
             {id: 68, src: './categories/dishCare/68.png', isWide: true},
             {id: 69, src: './categories/dishCare/69.png', isWide: true},
             {id: 70, src: './categories/dishCare/70.png', isWide: true},
+            {id: 71, src: './categories/dishCare/71.png', isWide: false},
+            {id: 72, src: './categories/dishCare/72.png', isWide: false},
+            {id: 73, src: './categories/dishCare/73.png', isWide: false},
+            {id: 74, src: './categories/dishCare/74.png', isWide: false},
+            {id: 75, src: './categories/dishCare/75.png', isWide: false},
+            {id: 76, src: './categories/dishCare/76.png', isWide: false},
+            {id: 77, src: './categories/dishCare/77.png', isWide: true},
+            {id: 78, src: './categories/dishCare/78.png', isWide: true},
 
         ]
     })
